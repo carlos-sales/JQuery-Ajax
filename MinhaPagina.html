@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<title>Exibição do Arquivo XML - nutrition</title>
+
+    <!--CSS usado para tornar a tabela visualmente mais agradável-->
+    <link rel="stylesheet" href="css/blue/style.css">
+
+    <!--JQuery-->
+	<script src="js/jquery-latest.js"></script>
+    
+    <!--Plugin JQuery para fazer a ordenação da tabela -->
+    <script src="js/jquery.tablesorter.min.js"></script>
+
+    <!--Script criado com o método para ordenação-->
+    <script src="js/script-ordenacao.js"></script>
+   
+    <!--Script onde é feito a leitura do XML em formato de tabela, para ser exibido em uma tabela no Body-->
+	<script src="js/script-geraTabela.js"></script>
+
+</head>
+<body>
+    <!--Definição da tabela utilizando classes do CSS (para melhorar o visual da tabela) e o método de ordenação-->
+	<table id="tabela" class="tablesorter ordena">
+        <thead>
+            <tr><!--Aqui é definido o cabeçalho da tabela-->
+                <th>Name</th>
+                <th>MFR</th>
+                <th>Serving</th>
+                <th>Calories</th>
+                <th>Total Fat</th>
+                <th>Saturated Fat</th>   
+                <th>Cholesterol</th>
+                <th>Sodium</th>
+                <th>Carb</th>
+                <th>Fiber</th>
+                <th>Protein</th>
+                <th>Vitamins</th>
+                <th>Minerals</th>    
+            </tr>
+        </thead>
+        <tbody id="tbody"><!--Aqui é chamado o método do script geraTabela, onde é feita a leitura do XML-->
+        </tbody>
+    </table>
+</body>
+</html>
